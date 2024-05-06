@@ -1,0 +1,50 @@
+{
+  "name": "django-codemirror",
+  "version": "0.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/djangomango/django-codemirror.git"
+  },
+  "scripts": {
+    "build": "node rollup-build.js",
+    "all": "npm run build all",
+    "html": "npm run build html",
+    "javascript": "npm run build javascript",
+    "css": "npm run build css",
+    "python": "npm run build python"
+  },
+  "dependencies": {
+    "@codemirror/autocomplete": "^6.16.0",
+    "@codemirror/commands": "^6.5.0",
+    "@codemirror/lang-cpp": "^6.0.2",
+    "@codemirror/lang-css": "^6.2.1",
+    "@codemirror/lang-html": "^6.4.9",
+    "@codemirror/lang-java": "^6.0.1",
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@codemirror/lang-json": "^6.0.1",
+    "@codemirror/lang-markdown": "^6.2.5",
+    "@codemirror/lang-php": "^6.0.1",
+    "@codemirror/lang-python": "^6.1.6",
+    "@codemirror/lang-rust": "^6.0.1",
+    "@codemirror/lang-sql": "^6.6.3",
+    "@codemirror/lang-xml": "^6.1.0",
+    "@codemirror/language": "^6.10.1",
+    "@codemirror/lint": "^6.7.0",
+    "@codemirror/search": "^6.5.6",
+    "@codemirror/state": "^6.4.1",
+    "@codemirror/view": "^6.26.3",
+    "@codemirror/theme-one-dark": "^6.1.2",
+    "@replit/codemirror-indentation-markers": "^6.5.1",
+    "codemirror": "^6.0.1",
+    "y-codemirror.next": "^0.3.3",
+    "y-webrtc": "^10.3.0",
+    "yjs": "^13.6.15"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.17.2",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}

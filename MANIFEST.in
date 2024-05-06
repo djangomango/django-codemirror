@@ -1,0 +1,2 @@
+recursive-include django_codemirror/static *.js
+recursive-include django_codemirror/templates *.html
