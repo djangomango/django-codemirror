@@ -2,7 +2,7 @@ const codeMirror = (function() {
 	'use strict';
 
 	const initCodeMirror = function (textarea) {
-		let options = JSON.parse(textarea.dataset.mirror);
+		let options = JSON.parse(textarea.dataset.codemirror);
 		let view = CMEditor.createEditorView(textarea.value, options)
 		textarea.parentNode.insertBefore(view.dom, textarea)
 		textarea.style.display = "none"
@@ -13,7 +13,7 @@ const codeMirror = (function() {
 	};
 
 	document.addEventListener('DOMContentLoaded', () => {
-		document.querySelectorAll('textarea[data-mirror]').forEach(initCodeMirror);
+		document.querySelectorAll('textarea[data-codemirror]').forEach(initCodeMirror);
 	});
 
 	return {

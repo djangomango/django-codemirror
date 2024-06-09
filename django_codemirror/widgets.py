@@ -21,7 +21,7 @@ class CodeMirrorEditor(forms.Textarea):
 
         if not attrs:
             attrs = {}
-        attrs['data-mirror'] = json.dumps(self.config)
+        attrs['data-codemirror'] = json.dumps(self.config)
 
         super().__init__(attrs)
 
